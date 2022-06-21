@@ -1,0 +1,164 @@
+{
+  "@context": "http://static.datafoodconsortium.org/ontologies/context.json",
+  "@graph" : [
+    {
+     "@id": "person/personId",
+      "@type": "dfc-b:Person",
+      "dfc-b:familyName": "Deare",
+      "dfc-b:firtsName": "John",
+      "dfc-b:hasAdress": {
+        "@type": "dfc-b:Address",
+        "dfc-b:city": "Bristol",
+        "dfc-b:country": "England",
+        "dfc-b:postcode": "BS4 1JT",
+        "dfc-b:street": "14 Easton Avenue"
+      },
+      "dfc-b:affiliates": [
+        "entreprise/15678"
+      ]
+    },
+    {
+      "@id": "entreprise/15678",
+      "@type": "dfc-b:Entreprise",
+      "dfc-b:VATnumber": "",
+      "dfc-b:defines": [
+        "customerCategory/customerCategoryId1",
+        "customerCategory/customerCategoryId2"
+      ],
+      "dfc-b:supplies": [
+        "suppliedProduct/Asparagus",
+        "suppliedProduct/strawberryPunnet",
+        "suppliedProduct/eggsHalfDozen"
+      ],
+      "dfc-b:manages": [
+        "catalogItem/Asparagus",
+        "catalogItem/strawberryPunnet",
+        "catalogItem/eggsHalfDozen"
+      ]
+    },
+    {
+      "@id": "customerCategory/customerCategoryId1",
+      "@type": "dfc-b:CustomerCategory",
+      "dfc-b:description": "member"
+    },
+    {
+      "@id": "customerCategory/customerCategoryId2",
+      "@type": "dfc-b:CustomerCategory",
+      "dfc-b:description": "non member"
+    },
+    {
+      "@id": "suppliedProduct/Asparagus",
+      "@type": "dfc-b:SuppliedProduct",
+      "dfc-p:hasUnit": "dfc-u:grammes",
+      "dfc-b:quantity": "250",
+      "dfc-p:hasType": "dfc-pt:asparagus",
+      "dfc-b:description": "Fresh Asparagus",
+      "dfc-b:totalTheoriticalStock": "999",
+      "dfc-b:brand": "Bedlam Farms",
+      "dfc-p:certification": "Organic",
+      "dfc-b:image": "supply image url",
+      "dfc-b:lifeTime": "3 days",
+      "dfc-b:physicalCharacterisctics": "supply physical characterisctics"
+    },
+    {
+      "@id": "suppliedProduct/eggsHalfDozen",
+      "@type": "dfc-b:SuppliedProduct",
+      "dfc-p:hasUnit": "dfc-u:piece",
+      "dfc-b:quantity": "1",
+      "dfc-p:hasType": "dfc-pt:egg",
+      "dfc-b:description": "Organic Eggs, box of 6",
+      "dfc-b:totalTheoriticalStock": "49",
+      "dfc-b:brand": "Happy Chickens",
+      "dfc-p:certification": "Organic",
+      "dfc-b:image": "supply image url",
+      "dfc-b:lifeTime": "28 days",
+      "dfc-b:physicalCharacterisctics": "supply physical characterisctics"
+    },
+   {
+      "@id": "suppliedProduct/strawberryPunnet",
+      "@type": "dfc-b:SuppliedProduct",
+      "dfc-p:hasUnit": "dfc-u:kilogram",
+      "dfc-b:quantity": "0.3",
+      "dfc-p:hasType": "dfc-pt:strawberry",
+      "dfc-b:description": "A punnet of fresh strawberries",
+      "dfc-b:claim": "supply claim",
+      "dfc-b:totalTheoriticalStock": "39",
+      "dfc-b:image": "supply image url",
+      "dfc-b:physicalCharacterisctics": "supply physical characterisctics"
+    },
+    {
+      "@id": "catalogItem/Asparagus",
+      "@type": "dfc-b:CatalogItem",
+      "dfc-b:references": "/suppliedProduct/Asparagus",
+      "dfc-b:sku": "catalog item gtin or sku",
+      "dfc-b:stockLimitation": "99",
+      "dfc-b:offeredThrough": [
+          "offer/offerId1",
+          "offer/offerId2"
+      ]
+    },
+    {
+      "@id": "catalogItem/eggsHalfDozen",
+      "@type": "dfc-b:CatalogItem",
+      "dfc-b:references": "/suppliedProduct/eggsHalfDozen",
+      "dfc-b:sku": "catalog item gtin or sku",
+      "dfc-b:stockLimitation": "99",
+      "dfc-b:offeredThrough": [
+          "offer/offerId5",
+          "offer/offerId6"
+      ]
+    },    {
+      "@id": "catalogItem/strawberryPunnet",
+      "@type": "dfc-b:CatalogItem",
+      "dfc-b:sku": "catalog item gtin or sku",
+      "dfc-b:stockLimitation": "999",
+      "dfc-b:references": "/suppliedProduct/strawberryPunnet",
+      "dfc-b:offeredThrough": [
+        "offer/offerId3",
+        "offer/offerId4"
+      ]
+    },
+    {
+      "@id": "offer/offerId1",
+      "@type": "dfc-b:Offer",
+      "dfc-b:offeres": "/customerCategory/customerCategoryId1",
+      "dfc-b:price": "4.00",
+      "dfc-b:stockLimitation": "999"
+    },
+    {
+      "@id": "offer/offerId2",
+      "@type": "dfc-b:Offer",
+      "dfc-b:offeres": "/customerCategory/customerCategoryId2",
+      "dfc-b:price": "4.50",
+      "dfc-b:stockLimitation": "999"
+    },
+    {
+      "@id": "offer/offerId3",
+      "@type": "dfc-b:Offer",
+      "dfc-b:offeres": "/customerCategory/customerCategoryId1",
+      "dfc-b:price": "3.00",
+      "dfc-b:stockLimitation": "999"
+    },
+    {
+      "@id": "offer/offerId4",
+      "@type": "dfc-b:Offer",
+      "dfc-b:offeres": "/customerCategory/customerCategoryId2",
+      "dfc-b:price": "3.35",
+      "dfc-b:stockLimitation": "999"
+    },
+    {
+      "@id": "offer/offerId5",
+      "@type": "dfc-b:Offer",
+      "dfc-b:offeres": "/customerCategory/customerCategoryId1",
+      "dfc-b:price": "2.50",
+      "dfc-b:stockLimitation": "999"
+    },
+    {
+      "@id": "offer/offerId6",
+      "@type": "dfc-b:Offer",
+      "dfc-b:offeres": "/customerCategory/customerCategoryId2",
+      "dfc-b:price": "2.75",
+      "dfc-b:stockLimitation": "999"
+    }
+  ]
+}
