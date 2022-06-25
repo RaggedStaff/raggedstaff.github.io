@@ -61,7 +61,7 @@
       "dfc-b:image": "https://cdn.pixabay.com/photo/2016/05/16/17/59/strawberries-1396330_960_720.jpg",
       "dfc-b:lifeTime": "supply lifeTime",
       "dfc-b:quantity": "0.5",
-      "dfc-b:referencedBy": "../catalogItem/catalogItemId8",
+      "dfc-b:referencedBy": "/catalogItem/catalogItemId8",
       "dfc-b:totalTheoriticalStock": "25",
       "dfc-p:hasType": "dfc-pt:tomato",
       "dfc-p:hasUnit": "dfc-u:kilogram"
@@ -79,7 +79,7 @@
       "dfc-b:hasType": "dfc-pt:cow-dairy-product",
       "dfc-b:image": "https://cdn.pixabay.com/photo/2013/07/13/09/50/yoghurt-156133_960_720.png",
       "dfc-b:lifeTime": "28 days",
-      "dfc-b:referencedBy": "../catalogItem/catalogItemId1",
+      "dfc-b:referencedBy": "/catalogItem/catalogItemId1",
       "dfc-b:specificCondition": "Keep chilled",
       "dfc-b:totalTheoriticalStock": "25"
     },
@@ -93,7 +93,7 @@
       "dfc-b:image": "https://cdn.pixabay.com/photo/2012/04/24/16/14/egg-40292_960_720.png",
       "dfc-b:lifeTime": "28 days",
       "dfc-b:quantity": "12",
-      "dfc-b:referencedBy": "../catalogItem/catalogItemId6",
+      "dfc-b:referencedBy": "/catalogItem/catalogItemId6",
       "dfc-b:totalTheoriticalStock": "24",
       "dfc-p:hasType": "dfc-pt:Eggs",
       "dfc-p:hasUnit": "dfc-u:Package"
@@ -108,7 +108,7 @@
       "dfc-b:image": "https://cdn.pixabay.com/photo/2016/05/16/17/59/strawberries-1396330_960_720.jpg",
       "dfc-b:lifeTime": "supply lifeTime",
       "dfc-b:quantity": "10",
-      "dfc-b:referencedBy": "../catalogItem/catalogItemId2",
+      "dfc-b:referencedBy": "/catalogItem/catalogItemId2",
       "dfc-b:totalTheoriticalStock": "48",
       "dfc-p:hasType": "dfc-pt:strawberry",
       "dfc-p:hasUnit": "dfc-u:Package"
@@ -153,49 +153,49 @@
     {
       "@id": "offer/offerId1",
       "@type": "dfc-b:Offer",
-      "dfc-b:offeres": "../customerCategory/customerCategoryId1",
+      "dfc-b:offeres": "/customerCategory/customerCategoryId1",
       "dfc-b:price": "2.00",
       "dfc-b:stockLimitation": "99"
     },
     {
       "@id": "offer/offerId3",
       "@type": "dfc-b:Offer",
-      "dfc-b:offeres": "../customerCategory/customerCategoryId1",
+      "dfc-b:offeres": "/customerCategory/customerCategoryId1",
       "dfc-b:price": "2.50",
       "dfc-b:stockLimitation": "99"
     },
     {
       "@id": "offer/offerId4",
       "@type": "dfc-b:Offer",
-      "dfc-b:offeres": "../customerCategory/customerCategoryId2",
+      "dfc-b:offeres": "/customerCategory/customerCategoryId2",
       "dfc-b:price": "3.00",
       "dfc-b:stockLimitation": "99"
     },
     {
       "@id": "offer/offerId5",
       "@type": "dfc-b:Offer",
-      "dfc-b:offeres": "../customerCategory/customerCategoryId1",
+      "dfc-b:offeres": "/customerCategory/customerCategoryId1",
       "dfc-b:price": "2.50",
       "dfc-b:stockLimitation": "99"
     },
     {
       "@id": "offer/offerId6",
       "@type": "dfc-b:Offer",
-      "dfc-b:offeres": "../customerCategory/customerCategoryId2",
+      "dfc-b:offeres": "/customerCategory/customerCategoryId2",
       "dfc-b:price": "3.00",
       "dfc-b:stockLimitation": "99"
     },
     {
       "@id": "offer/offerId7",
       "@type": "dfc-b:Offer",
-      "dfc-b:offeres": "../customerCategory/customerCategoryId1",
+      "dfc-b:offeres": "/customerCategory/customerCategoryId1",
       "dfc-b:price": "5.00",
       "dfc-b:stockLimitation": "99"
     },
     {
       "@id": "offer/offerId8",
       "@type": "dfc-b:Offer",
-      "dfc-b:offeres": "../customerCategory/customerCategoryId2",
+      "dfc-b:offeres": "/customerCategory/customerCategoryId2",
       "dfc-b:price": "6.50",
       "dfc-b:stockLimitation": "99"
     }
